@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ใส่ชื่อ - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="nav">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#gallery">GALLERY</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page-section home-section">
+            <div class="hero">
+                <h1>ใส่ชื่อ</h1>
+                <p>COMPUTER SCIENCE STUDENT</p>
+                <div class="hero-line"></div>
+            </div>
+
+            <div class="home-grid">
+                <article class="info-card">
+                    <h3>profile</h3>
+                    <p>ใส่ข้อมูล</p>
+                </article>
+                <article class="info-card">
+                    <h3>study</h3>
+                    <p>Bangkok University<br>ใส่ข้อมูล</p>
+                </article>
+                <article class="info-card">
+                    <h3>goal</h3>
+                    <p>ใส่ข้อมูล</p>
+                </article>
+                <article class="info-card">
+                    <h3>student id</h3>
+                    <p>ใส่ข้อมูล</p>
+                </article>
+                <article class="info-card">
+                    <h3>html</h3>
+                    <p>ใส่ข้อมูล</p>
+                </article>
+                <article class="info-card">
+                    <h3>css</h3>
+                    <p>ใส่ข้อมูล</p>
+                </article>
+                <article class="info-card">
+                    <h3>javascript</h3>
+                    <p>ใส่ข้อมูล</p>
+                </article>
+                <article class="info-card">
+                    <h3>future</h3>
+                    <p>ใส่ข้อมูล</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="page-section about-section">
+            <div class="section-hero">
+                <h2>a sentence here.</h2>
+                <p>here's your sentence.</p>
+                <div class="hero-line"></div>
+            </div>
+            <div class="about-list">
+                <article class="about-row">
+                    <h3>quick introduction</h3>
+                    <p>ใส่ชื่อ. I am a second-year Computer Science student at Bangkok University.</p>
+                </article>
+                <article class="about-row">
+                    <h3>what i learn</h3>
+                    <p>I learn programming, web development, databases and computer science fundamentals at university.
+                    </p>
+                </article>
+                <article class="about-row">
+                    <h3>what i want to do</h3>
+                    <p>I want to build easy-to-use web applications and develop my skills toward a Full-Stack Developer
+                        career.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery" class="page-section gallery-section">
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img src="images/image01.jpg" alt="Gallery Image 01">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image02.jpg" alt="Gallery Image 02">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image03.jpg" alt="Gallery Image 03">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image04.jpg" alt="Gallery Image 04">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image05.jpg" alt="Gallery Image 05">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image06.jpg" alt="Gallery Image 06">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image07.jpg" alt="Gallery Image 07">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/image08.jpg" alt="Gallery Image 08">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2>a sentence here.</h2>
+        <p>here's your sentence.</p>
+        <div class="footer-line"></div>
+        <small>© 2026 ใส่ชื่อ</small>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav').classList.toggle('show');
+        }
+
+        document.querySelectorAll('.nav a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                document.getElementById('nav').classList.remove('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
